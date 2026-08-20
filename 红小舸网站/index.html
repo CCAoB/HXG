@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红小舸 | 武汉华夏理工学院 · 日新思政工作室</title>
+    <meta name="description" content="红小舸实践队——武汉华夏理工学院日新思政工作室，以抗洪精神调研为核心，传承红色基因，赓续精神血脉。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- ========== 动态海浪背景 ========== -->
+<div class="ocean-bg">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="bubble-container" id="bubbles"></div>
+</div>
+
+<!-- ========== 导航栏 ========== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <div class="nav-brand">
+            <img src="./assets/images/ip.png" alt="武汉华夏理工学院" class="nav-logo">
+            <div class="nav-brand-text">
+                <span class="brand-cn">红小舸</span>
+                <span class="brand-sub">日新思政工作室</span>
+            </div>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#hero" class="nav-link active">首页</a>
+            <a href="#about" class="nav-link">团队介绍</a>
+            <a href="#spirit" class="nav-link">抗洪精神</a>
+            <a href="#modules" class="nav-link">功能专区</a>
+            <a href="#gallery" class="nav-link">光影记忆</a>
+            <a href="#data" class="nav-link">实践成果</a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== 首屏 Hero ========== -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                武汉华夏理工学院 · 日新思政工作室
+            </div>
+            <h1 class="hero-title">
+                <span class="title-brush">红小舸</span>
+            </h1>
+            <p class="hero-slogan">乘风破浪 · 赓续抗洪精神</p>
+            <p class="hero-desc">
+                以青春之名，赴荆江之约。红小舸实践队深入抗洪一线，
+                调研抗洪精神时代内涵，用脚步丈量责任，用行动传承红色基因。
+            </p>
+            <div class="hero-actions">
+                <a href="#modules" class="btn btn-primary">
+                    探索专区
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#about" class="btn btn-outline">了解我们</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="15">0</span>
+                    <span class="stat-label">实践天数</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="8">0</span>
+                    <span class="stat-label">调研地点</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="30">0</span>
+                    <span class="stat-label">采访人物</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="120">0</span>
+                    <span class="stat-label">产出作品</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="ip-showcase">
+                <div class="ip-glow"></div>
+                <img src="./assets/images/logo.png" alt="红小舸IP形象" class="ip-image">
+                <div class="ip-ring ip-ring1"></div>
+                <div class="ip-ring ip-ring2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint">
+        <span>向下滚动</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ========== 功能入口快捷区 ========== -->
+<section class="quick-entry">
+    <div class="container">
+        <div class="entry-grid">
+            <a href="#video" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                </div>
+                <h3>浪涛影像</h3>
+                <p>抗洪纪实 · 实践视频</p>
+            </a>
+            <a href="#culture" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </div>
+                <h3>小舸文化</h3>
+                <p>IP设计 · 文创周边</p>
+            </a>
+            <a href="#gallery" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                </div>
+                <h3>光影记忆</h3>
+                <p>调研纪实 · 纪念相册</p>
+            </a>
+            <a href="#knowledge" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <h3>抗洪知库</h3>
+                <p>精神解读 · 知识科普</p>
+            </a>
+            <a href="#journal" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <h3>实践纪实</h3>
+                <p>调研日志 · 心路历程</p>
+            </a>
+            <a href="#team" class="entry-card reveal">
+                <div class="entry-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3>团队风采</h3>
+                <p>成员介绍 · 青春群像</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 关于团队 ========== -->
+<section class="section about-section" id="about">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">ABOUT US</span>
+            <h2 class="section-title">关于红小舸</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h3>以青春之我，赴时代之约</h3>
+                <p>
+                    红小舸实践队隶属于武汉华夏理工学院日新思政工作室，
+                    是一支以"抗洪精神调研"为核心主题的暑期社会实践团队。
+                    团队取名"红小舸"，寓意在时代浪潮中乘风破浪的红色小舟，
+                    象征青年学子在抗洪精神的指引下，勇立潮头、砥砺前行。
+                </p>
+                <p>
+                    我们深入长江流域，探索荆江分洪区、抗洪纪念馆、一线堤防等地，
+                    通过实地走访、人物访谈、史料整理等方式，
+                    挖掘抗洪精神的时代价值，以青年视角讲述抗洪故事，
+                    让红色基因在新时代焕发新的生机与活力。
+                </p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-num">01</div>
+                        <div class="feature-content">
+                            <h4>实地调研</h4>
+                            <p>深入抗洪一线，获取第一手资料</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-num">02</div>
+                        <div class="feature-content">
+                            <h4>IP创作</h4>
+                            <p>打造红小舸形象，文创赋能传播</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-num">03</div>
+                        <div class="feature-content">
+                            <h4>融媒传播</h4>
+                            <p>多平台矩阵，扩大精神影响力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual reveal">
+                <div class="visual-card">
+                    <div class="visual-quote">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="quote-text">
+                        万众一心、众志成城，不怕困难、顽强拼搏，
+                        坚韧不拔、敢于胜利。
+                    </p>
+                    <p class="quote-author">—— 抗洪精神</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 抗洪精神主题区 ========== -->
+<section class="section spirit-section" id="spirit">
+    <div class="container">
+        <div class="section-header reveal light">
+            <span class="section-tag">SPIRIT</span>
+            <h2 class="section-title">抗洪精神</h2>
+            <div class="title-line light"></div>
+            <p class="section-subtitle light">从1998到如今，从长江的故事到一个时代的凯歌，抗洪精神在时代浪潮中永续传承</p>
+        </div>
+
+        <!-- 抗洪精神六要素 -->
+        <div class="spirit-grid">
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3>万众一心</h3>
+                <p>举国上下同心协力，凝聚起抗洪救灾的磅礴力量</p>
+            </div>
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>众志成城</h3>
+                <p>军民携手筑堤防洪，用血肉之躯筑起钢铁长城</p>
+            </div>
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <h3>不怕困难</h3>
+                <p>面对滔天洪水毫不畏惧，以大无畏精神直面挑战</p>
+            </div>
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>顽强拼搏</h3>
+                <p>连续作战不屈不挠，在绝境中创造生命奇迹</p>
+            </div>
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                </div>
+                <h3>坚韧不拔</h3>
+                <p>意志坚定百折不挠，在洪峰面前始终屹立不倒</p>
+            </div>
+            <div class="spirit-card reveal">
+                <div class="spirit-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <h3>敢于胜利</h3>
+                <p>坚信人定胜天，以必胜信念夺取抗洪斗争最终胜利</p>
+            </div>
+        </div>
+
+        <!-- 抗洪历史时间线 -->
+        <div class="timeline-section reveal">
+            <h3 class="timeline-title">抗洪记忆 · 历史回响</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1952</span>
+                        <h4>荆江分洪工程</h4>
+                        <p>新中国成立后第一个大型水利工程，30万军民75天建成，开创治水壮举。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">1998</span>
+                        <h4>世纪大抗洪</h4>
+                        <p>长江流域遭遇特大洪水，军民团结奋战，孕育形成伟大抗洪精神。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2016</span>
+                        <h4>防汛抗洪斗争</h4>
+                        <p>全国多地遭遇严重洪涝，新时代抗洪精神在实践中不断丰富发展。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h4>南方抗洪抢险</h4>
+                        <p>南方多地发生严重洪涝灾害，人民至上、生命至上，再次见证中国力量。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 功能模块专区 ========== -->
+<section class="section modules-section" id="modules">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">EXPLORE</span>
+            <h2 class="section-title">功能专区</h2>
+            <div class="title-line"></div>
+            <p class="section-subtitle">多元呈现抗洪精神，全方位展示实践成果</p>
+        </div>
+
+        <!-- 浪涛影像 -->
+        <div class="module-block" id="video">
+            <div class="module-header reveal">
+                <div class="module-num">01</div>
+                <div class="module-info">
+                    <h3>浪涛影像</h3>
+                    <p>抗洪纪实 · 实践视频 · 红色宣讲</p>
+                </div>
+            </div>
+            <div class="video-grid">
+                <div class="video-card reveal">
+                    <div class="video-thumb" style="background: linear-gradient(135deg, #1B4332, #2D6A4F);">
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </div>
+                        <span class="video-duration">08:32</span>
+                    </div>
+                    <div class="video-info">
+                        <h4>荆江记忆 · 抗洪精神调研纪实</h4>
+                        <p>实践队纪实跟拍</p>
+                    </div>
+                </div>
+                <div class="video-card reveal">
+                    <div class="video-thumb" style="background: linear-gradient(135deg, #4A90B8, #6BB3D9);">
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </div>
+                        <span class="video-duration">05:18</span>
+                    </div>
+                    <div class="video-info">
+                        <h4>红色宣讲员讲述历史故事</h4>
+                        <p>新时代青年学子的传承</p>
+                    </div>
+                </div>
+                <div class="video-card reveal">
+                    <div class="video-thumb" style="background: linear-gradient(135deg, #C1121F, #E63946);">
+                        <div class="play-btn">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </div>
+                        <span class="video-duration">03:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h4>红小舸IP系列宣传片</h4>
+                        <p>乘风破浪的红色小舟</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 小舸文化 -->
+        <div class="module-block" id="culture">
+            <div class="module-header reveal">
+                <div class="module-num">02</div>
+                <div class="module-info">
+                    <h3>小舸文化</h3>
+                    <p>IP衍生 · 文创设计 · 周边产品</p>
+                </div>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-card reveal">
+                    <div class="culture-img" style="background: linear-gradient(135deg, #F8F5F0, #E8F0F4);">
+                        <div class="culture-placeholder">明信片</div>
+                    </div>
+                    <h4>抗洪精神明信片套装</h4>
+                    <p>一套6张，收录调研纪实影像</p>
+                </div>
+                <div class="culture-card reveal">
+                    <div class="culture-img" style="background: linear-gradient(135deg, #1B4332, #2D6A4F);">
+                        <div class="culture-placeholder light">徽章</div>
+                    </div>
+                    <h4>红小舸金属徽章</h4>
+                    <p>IP形象珐琅工艺纪念徽章</p>
+                </div>
+                <div class="culture-card reveal">
+                    <div class="culture-img" style="background: linear-gradient(135deg, #4A90B8, #6BB3D9);">
+                        <div class="culture-placeholder">亚克力面板</div>
+                    </div>
+                    <h4>红小舸亚克力面板</h4>
+                    <p>抗洪精神标语原创设计</p>
+                </div>
+                <div class="culture-card reveal">
+                    <div class="culture-img" style="background: linear-gradient(135deg, #D4A574, #E8C99B);">
+                        <div class="culture-placeholder">表情包</div>
+                    </div>
+                    <h4>红小舸表情包贴纸</h4>
+                    <p>IP形象趣味贴纸合集</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 抗洪知库 -->
+        <div class="module-block" id="knowledge">
+            <div class="module-header reveal">
+                <div class="module-num">03</div>
+                <div class="module-info">
+                    <h3>抗洪知库</h3>
+                    <p>精神解读 · 历史科普 · 知识问答</p>
+                </div>
+            </div>
+            <div class="knowledge-grid">
+                <div class="knowledge-card reveal">
+                    <div class="knowledge-tag">精神内涵</div>
+                    <h4>抗洪精神的形成与发展</h4>
+                    <p>从1998年特大洪水到新时代防汛救灾，抗洪精神在实践中不断丰富，成为中国精神的重要组成部分。</p>
+                    <a href="#" class="knowledge-link">阅读全文 →</a>
+                </div>
+                <div class="knowledge-card reveal">
+                    <div class="knowledge-tag">水利工程</div>
+                    <h4>荆江分洪工程的历史意义</h4>
+                    <p>1952年建成的荆江分洪工程，是新中国水利建设的里程碑，承载着几代人的治水智慧。</p>
+                    <a href="#" class="knowledge-link">阅读全文 →</a>
+                </div>
+                <div class="knowledge-card reveal">
+                    <div class="knowledge-tag">防汛知识</div>
+                    <h4>洪涝灾害自救互救指南</h4>
+                    <p>面对洪涝灾害如何科学避险？掌握这些自救知识，关键时刻能保护自己和家人。</p>
+                    <a href="#" class="knowledge-link">阅读全文 →</a>
+                </div>
+                <div class="knowledge-card reveal">
+                    <div class="knowledge-tag">人物故事</div>
+                    <h4>抗洪英雄群像录</h4>
+                    <p>从将军到士兵，从干部到群众，无数平凡英雄在抗洪一线书写了不平凡的人生。</p>
+                    <a href="#" class="knowledge-link">阅读全文 →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 实践纪实 -->
+        <div class="module-block" id="journal">
+            <div class="module-header reveal">
+                <div class="module-num">04</div>
+                <div class="module-info">
+                    <h3>实践纪实</h3>
+                    <p>调研日志 · 心路历程 · 实践感悟</p>
+                </div>
+            </div>
+            <div class="journal-list">
+                <div class="journal-item reveal">
+                    <div class="journal-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">07月</span>
+                    </div>
+                    <div class="journal-content">
+                        <h4>启程 · 奔赴荆江</h4>
+                        <p>实践队从武汉出发，前往荆江分洪区，开启抗洪精神调研之旅。首日参观荆江分洪工程纪念碑，感受治水壮举。</p>
+                    </div>
+                </div>
+                <div class="journal-item reveal">
+                    <div class="journal-date">
+                        <span class="date-day">18</span>
+                        <span class="date-month">07月</span>
+                    </div>
+                    <div class="journal-content">
+                        <h4>访谈 · 抗洪老兵</h4>
+                        <p>采访1998年抗洪亲历者李爷爷，听他讲述那段惊心动魄的岁月，老兵的眼泪让我们深刻理解了抗洪精神的重量。</p>
+                    </div>
+                </div>
+                <div class="journal-item reveal">
+                    <div class="journal-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">07月</span>
+                    </div>
+                    <div class="journal-content">
+                        <h4>巡堤 · 亲历防汛</h4>
+                        <p>跟随当地防汛人员参与堤防巡查，亲身体验巡堤工作的艰辛，每一步都是责任，每一眼都是守护。</p>
+                    </div>
+                </div>
+                <div class="journal-item reveal">
+                    <div class="journal-date">
+                        <span class="date-day">28</span>
+                        <span class="date-month">07月</span>
+                    </div>
+                    <div class="journal-content">
+                        <h4>收官 · 精神永存</h4>
+                        <p>为期半月的调研圆满结束。抗洪精神不是历史，而是流淌在我们血脉中的力量，红小舸将继续乘风破浪。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 光影记忆 照片墙 ========== -->
+<section class="section gallery-section" id="gallery">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">GALLERY</span>
+            <h2 class="section-title">光影记忆</h2>
+            <div class="title-line"></div>
+            <p class="section-subtitle">镜头记录的每一个瞬间，都是抗洪精神的生动注脚</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item reveal tall" style="background: linear-gradient(135deg, #1B4332, #2D6A4F);">
+                <div class="gallery-overlay">
+                    <h4>荆江大堤</h4>
+                    <p>晨光中的堤防</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" style="background: linear-gradient(135deg, #4A90B8, #6BB3D9);">
+                <div class="gallery-overlay">
+                    <h4>分洪工程</h4>
+                    <p>治水丰碑</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" style="background: linear-gradient(135deg, #C1121F, #E63946);">
+                <div class="gallery-overlay">
+                    <h4>团队合影</h4>
+                    <p>实践全家福</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal wide" style="background: linear-gradient(135deg, #D4A574, #E8C99B);">
+                <div class="gallery-overlay">
+                    <h4>抗洪纪念馆</h4>
+                    <p>历史的回响</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" style="background: linear-gradient(135deg, #2D6A4F, #40916C);">
+                <div class="gallery-overlay">
+                    <h4>人物访谈</h4>
+                    <p>聆听抗洪故事</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal tall" style="background: linear-gradient(135deg, #6BB3D9, #8ECAE6);">
+                <div class="gallery-overlay">
+                    <h4>巡堤路上</h4>
+                    <p>脚步丈量责任</p>
+                </div>
+            </div>
+            <div class="gallery-item reveal" style="background: linear-gradient(135deg, #1B4332, #40916C);">
+                <div class="gallery-overlay">
+                    <h4>史料整理</h4>
+                    <p>挖掘红色记忆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 团队风采 ========== -->
+<section class="section team-section" id="team">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="section-tag">TEAM</span>
+            <h2 class="section-title">团队风采</h2>
+            <div class="title-line"></div>
+            <p class="section-subtitle">一群有理想、敢担当的青年学子，在抗洪精神的感召下集结</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #4A90B8, #6BB3D9);">
+                    <span>队</span>
+                </div>
+                <h4>队长</h4>
+                <p class="team-role">统筹协调 · 对外联络</p>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #1B4332, #2D6A4F);">
+                    <span>采</span>
+                </div>
+                <h4>采编组</h4>
+                <p class="team-role">人物访谈 · 文稿撰写</p>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #C1121F, #E63946);">
+                    <span>影</span>
+                </div>
+                <h4>影像组</h4>
+                <p class="team-role">摄影摄像 · 视频剪辑</p>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #D4A574, #E8C99B);">
+                    <span>设</span>
+                </div>
+                <h4>设计组</h4>
+                <p class="team-role">IP设计 · 文创开发</p>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #2D6A4F, #40916C);">
+                    <span>运</span>
+                </div>
+                <h4>运营组</h4>
+                <p class="team-role">新媒体运营 · 传播推广</p>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-avatar" style="background: linear-gradient(135deg, #6BB3D9, #8ECAE6);">
+                    <span>技</span>
+                </div>
+                <h4>技术组</h4>
+                <p class="team-role">网站开发 · 小程序</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 实践成果数据 ========== -->
+<section class="section data-section" id="data">
+    <div class="container">
+        <div class="section-header reveal light">
+            <span class="section-tag">ACHIEVEMENT</span>
+            <h2 class="section-title">实践成果</h2>
+            <div class="title-line light"></div>
+            <p class="section-subtitle light">用数据见证成长，用成果诠释担当</p>
+        </div>
+        <div class="data-grid">
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <span class="data-num" data-target="8">0</span>
+                <span class="data-unit">篇</span>
+                <p class="data-label">调研报告</p>
+            </div>
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                </div>
+                <span class="data-num" data-target="12">0</span>
+                <span class="data-unit">部</span>
+                <p class="data-label">短视频作品</p>
+            </div>
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                </div>
+                <span class="data-num" data-target="500">0</span>
+                <span class="data-unit">张</span>
+                <p class="data-label">纪实照片</p>
+            </div>
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+                </div>
+                <span class="data-num" data-target="20">0</span>
+                <span class="data-unit">件</span>
+                <p class="data-label">文创产品</p>
+            </div>
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                </div>
+                <span class="data-num" data-target="10000">0</span>
+                <span class="data-unit">+</span>
+                <p class="data-label">全网曝光量</p>
+            </div>
+            <div class="data-card reveal">
+                <div class="data-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <span class="data-num" data-target="3">0</span>
+                <span class="data-unit">项</span>
+                <p class="data-label">校级以上奖项</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CTA 号召区 ========== -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-inner reveal">
+            <h2>乘风破浪，未来可期</h2>
+            <p>抗洪精神永不过时，红小舸永远在路上。<br>关注我们，一起传承红色基因，赓续精神血脉。</p>
+            <div class="cta-actions">
+                <a href="#hero" class="btn btn-primary">返回顶部</a>
+                <a href="#about" class="btn btn-outline-light">加入我们</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== 页脚 ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./assets/images/logo.png" alt="武汉华夏理工学院">
+                    <div>
+                        <h3>红小舸</h3>
+                        <span>武汉华夏理工学院 · 日新思政工作室</span>
+                    </div>
+                </div>
+                <p>以抗洪精神调研为核心，传承红色基因，赓续精神血脉。<br>乘风破浪，砥砺前行。</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <a href="#about">团队介绍</a>
+                <a href="#spirit">抗洪精神</a>
+                <a href="#modules">功能专区</a>
+                <a href="#gallery">光影记忆</a>
+            </div>
+            <div class="footer-links">
+                <h4>功能专区</h4>
+                <a href="#video">浪涛影像</a>
+                <a href="#culture">小舸文化</a>
+                <a href="#knowledge">抗洪知库</a>
+                <a href="#journal">实践纪实</a>
+            </div>
+            <div class="footer-contact">
+                <h4>联系我们</h4>
+                <p>地址：武汉华夏理工学院日新思政工作室</p>
+                <p>邮箱：189428887@qq.com</p>
+                <p>QQ：189428887</p>
+                <p>微信公众号：日新思政</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 红小舸实践队 · 武汉华夏理工学院日新思政工作室 版权所有</p>
+            <p>乘风破浪 · 赓续抗洪精神</p>
+        </div>
+    </div>
+</footer>
+
+<!-- 回到顶部按钮 -->
+<div class="back-to-top" id="backToTop">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
